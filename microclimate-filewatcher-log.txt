@@ -1,0 +1,417 @@
+file-watcher container started Fri Nov 23 15:28:58 UTC 2018
+*** Copying the certificates over
+Creating /root/.helm/repository 
+Creating /root/.helm/repository/cache 
+Creating /root/.helm/repository/local 
+Creating /root/.helm/plugins 
+Creating /root/.helm/starters 
+Creating /root/.helm/cache/archive 
+Creating /root/.helm/repository/repositories.yaml 
+Adding stable repo with URL: https://kubernetes-charts.storage.googleapis.com 
+Error: Looks like "https://kubernetes-charts.storage.googleapis.com" is not a valid chart repository or cannot be reached: Get https://kubernetes-charts.storage.googleapis.com/index.yaml: dial tcp: i/o timeout
+Creating Helm TLS wrapper
+Starting file-watcher notification server
+
+> file-watcher@1.0.0 start /server
+> node server.js "/microclimate-workspace"
+
+file-watcher server launched on port '9091'
+Creating project /microclimate-workspace/myjavasample
+The generated image ID is: myjavasample-liberty-bb55543d4aea7cdfdf5d56b4d17eff8336eb951b
+Project data directory: /fwdata/projects/
+{"/fwdata/projects/myjavasample/myjavasample.json":"{\"projectId\":\"myjavasample\",\"projectType\":\"liberty\",\"location\":\"/microclimate-workspace/myjavasample\"}"}
+operationId: 2a08487c5efbd1d94a9fd19078f71e81
+Creating container for liberty project /microclimate-workspace/myjavasample
+The container name for myjavasample is mc-myjavasample-bb55543d4aea7cdfdf5d56b4d17eff8336eb9
+Container name: mc-myjavasample-bb55543d4aea7cdfdf5d56b4d17eff8336eb9
+In K8 environment: true
+Now tracking running process 161 for project myjavasample
+*** JAVA
+*** PWD = /server
+*** ROOT = /microclimate-workspace/myjavasample
+*** LOCAL_WORKSPACE = /microclimate-workspace
+*** CONTAINER_NAME = mc-myjavasample-bb55543d4aea7cdfdf5d56b4d17eff8336eb9
+*** HOST_OS = 
+
+Finished writing file /fwdata/projects/myjavasample/myjavasample.json
+/microclimate-workspace/myjavasample/pom.xml exists
+Starting Java project
+
+Watching /microclimate-workspace/myjavasample/src
+
+Setting up watches.  Beware: since -r was given, this may take a while!
+
+Watches established.
+
+First time setup of app /microclimate-workspace/myjavasample
+
+Sending update state post for project myjavasample and state stopped
+
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+Application state changed for project: myjavasample from: unknown, to: stopped
+Emitting event over socket 
+ message: projectStatusChanged
+ data: {
+  "projectId": "myjavasample",
+  "type": "appState",
+  "status": "stopped"
+}
+OK
+100    52  100     2  100    50    333   8333 --:--:-- --:--:-- --:--:--  8666
+
+[INFO Fri Nov 23 16:37:59 GMT 2018] Configuration file detected: 
+
+
+[INFO Fri Nov 23 16:37:59 GMT 2018] libertyEnv : microclimate
+
+[INFO Fri Nov 23 16:37:59 GMT 2018] appPrefix : microclimate-dev-liberty-
+[INFO Fri Nov 23 16:37:59 GMT 2018] idcBasePath : /microclimate-workspace
+
+[INFO Fri Nov 23 16:38:01 GMT 2018] * Switched to Development mode.
+
+
+[INFO Fri Nov 23 16:38:02 GMT 2018] Local workspace origin is set to /microclimate-workspace
+
+[INFO Fri Nov 23 16:38:02 GMT 2018] Configuration file detected: 
+
+[INFO Fri Nov 23 16:38:02 GMT 2018] libertyEnv : microclimate
+
+[INFO Fri Nov 23 16:38:02 GMT 2018] appPrefix : microclimate-dev-liberty-
+[INFO Fri Nov 23 16:38:02 GMT 2018] idcBasePath : /microclimate-workspace
+
+[INFO Fri Nov 23 16:38:04 GMT 2018] IDC options set.
+
+[INFO Fri Nov 23 16:38:05 GMT 2018] The application container and image name is set to mc-myjavasample-bb55543d4aea7cdfdf5d56b4d17eff8336eb9
+
+[INFO Fri Nov 23 16:38:05 GMT 2018] Configuration file detected: 
+
+[INFO Fri Nov 23 16:38:05 GMT 2018] libertyEnv : microclimate
+[INFO Fri Nov 23 16:38:05 GMT 2018] appPrefix : microclimate-dev-liberty-
+[INFO Fri Nov 23 16:38:05 GMT 2018] idcBasePath : /microclimate-workspace
+
+[INFO Fri Nov 23 16:38:07 GMT 2018] IDC options set.
+
+idc build started for /microclimate-workspace/myjavasample Fri Nov 23 16:38:07 UTC 2018
+
+[INFO Fri Nov 23 16:38:08 GMT 2018] Configuration file detected: 
+
+[INFO Fri Nov 23 16:38:08 GMT 2018] libertyEnv : microclimate
+
+[INFO Fri Nov 23 16:38:08 GMT 2018] appPrefix : microclimate-dev-liberty-
+[INFO Fri Nov 23 16:38:08 GMT 2018] idcBasePath : /microclimate-workspace
+
+[INFO Fri Nov 23 16:38:10 GMT 2018] Selected Dockerfile from Dockerfile list [Dockerfile, Dockerfile-lang, Dockerfile-dev] is: Dockerfile-lang
+
+[INFO Fri Nov 23 16:38:10 GMT 2018] Selected Dockerfile from Dockerfile list [Dockerfile-dev-build, Dockerfile-build] is: Dockerfile-build
+
+
+[INFO Fri Nov 23 16:38:10 GMT 2018] * Container build is required.
+
+[INFO Fri Nov 23 16:38:10 GMT 2018] Selected Dockerfile from Dockerfile list [Dockerfile, Dockerfile-lang, Dockerfile-dev] is: Dockerfile-lang
+
+[INFO Fri Nov 23 16:38:10 GMT 2018] Selected Dockerfile from Dockerfile list [Dockerfile-dev-build, Dockerfile-build] is: Dockerfile-build
+
+[INFO Fri Nov 23 16:38:10 GMT 2018] merging: Dockerfile-lang
+
+
+[INFO Fri Nov 23 16:38:10 GMT 2018] merging: Dockerfile-build
+
+
+[INFO Fri Nov 23 16:38:10 GMT 2018] merging: Dockerfile-dev-setup
+
+
+[INFO Fri Nov 23 16:38:10 GMT 2018] Generated Dockerfile for development: /microclimate-workspace/.idc/docker/docker-bb55543d4aea7cdfdf5d56b4d17eff8336eb951b/Dockerfile
+
+
+[INFO Fri Nov 23 16:38:15 GMT 2018] Build app image using cmd: docker build -t mc-myjavasample-bb55543d4aea7cdfdf5d56b4d17eff8336eb9 /microclimate-workspace/.idc/docker/docker-bb55543d4aea7cdfdf5d56b4d17eff8336eb951b
+
+Sending build context to Docker daemon  116.4MB
+
+
+
+Step 1/14 : FROM websphere-liberty:webProfile7
+ ---> c9e5e5d2341f
+
+Step 2/14 : MAINTAINER IBM Java engineering at IBM Cloud
+ ---> Using cache
+ ---> 48fe89e81fda
+Step 3/14 : RUN mkdir -m 777 -p /config/resources
+ ---> Using cache
+ ---> 425fe1abaf8e
+Step 4/14 : ARG LICENSE_JAR_URL
+ ---> Using cache
+ ---> 35c7f02fccc3
+Step 5/14 : RUN   if [ $LICENSE_JAR_URL ]; then     wget $LICENSE_JAR_URL -O /tmp/license.jar     && java -jar /tmp/license.jar -acceptLicense /opt/ibm     && rm /tmp/license.jar;   fi
+ ---> Using cache
+ ---> 4257968c9e06
+
+Step 6/14 : ENV JAVA_VERSION 1.8.0_sr5fp6
+
+ ---> Using cache
+
+ ---> f99c1e40a625
+
+Step 7/14 : RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64|x86_64)          ESUM='b5e2824313e62d647c7c7c7c8a6eb8704e445e915da460d379aedd30e6835030';          YML_FILE='sdk/linux/x86_64/index.yml';          ;;        i386)          ESUM='5e2fd0cafeab9c72e8eb038eb22cf911a18607298a47cd3d4684179610ec364c';          YML_FILE='sdk/linux/i386/index.yml';          ;;        ppc64el|ppc64le)          ESUM='c2dc7e1cf3db66f7ea0497b48ecb79048a553eaa82d5595a43c9bd7542610b0b';          YML_FILE='sdk/linux/ppc64le/index.yml';          ;;        s390)          ESUM='5f3f12fefe36502954d69fb1178c2a8bcd88624bc77c4c7bafd9193adcc79398';          YML_FILE='sdk/linux/s390/index.yml';          ;;        s390x)          ESUM='116fbee3c36425056d6310dd6ef54ce3debdd7150fa57e28caf39f04108b3edc';          YML_FILE='sdk/linux/s390x/index.yml';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     BASE_URL="https://public.dhe.ibm.com/ibmdl/export/pub/systems/cloud/runtimes/java/meta/";     wget -q -U UA_IBM_JAVA_Docker -O /tmp/index.yml ${BASE_URL}/${YML_FILE};     JAVA_URL=$(cat /tmp/index.yml | sed -n '/'${JAVA_VERSION}'/{n;p}' | sed -n 's/\s*uri:\s//p' | tr -d '\r');     wget -q -U UA_IBM_JAVA_Docker -O /tmp/ibm-java.bin ${JAVA_URL};     echo "${ESUM}  /tmp/ibm-java.bin" | sha256sum -c -;     echo "INSTALLER_UI=silent" > /tmp/response.properties;     echo "USER_INSTALL_DIR=/root/java" >> /tmp/response.properties;     echo "LICENSE_ACCEPTED=TRUE" >> /tmp/response.properties;     mkdir -p /root/java;     chmod +x /tmp/ibm-java.bin;     /tmp/ibm-java.bin -i silent -f /tmp/response.properties;     rm -f /tmp/response.properties;     rm -f /tmp/index.yml;     rm -f /tmp/ibm-java.bin;     cd /root/java/jre/lib;     rm -rf icc;
+
+ ---> Using cache
+
+ ---> bf7c59821cd7
+
+Step 8/14 : RUN mkdir -p /opt/mvn;     MAVEN_VERSION=$(wget -qO- https://repo.maven.apache.org/maven2/org/apache/maven/apache-maven/maven-metadata.xml | sed -n 's/\s*<release>\(.*\)<.*>/\1/p');     wget -q -U UA_IBM_JAVA_Docker -O /opt/mvn/apache-maven-${MAVEN_VERSION}-bin.tar.gz https://search.maven.org/remotecontent?filepath=org/apache/maven/apache-maven/${MAVEN_VERSION}/apache-maven-${MAVEN_VERSION}-bin.tar.gz;     tar xf /opt/mvn/apache-maven-${MAVEN_VERSION}-bin.tar.gz -C /opt/mvn;     mv /opt/mvn/apache-maven-${MAVEN_VERSION} /opt/mvn/apache-maven;     rm -f /opt/mvn/apache-maven-${MAVEN_VERSION}-bin.tar.gz;
+
+ ---> Using cache
+
+ ---> 1c41f63c3037
+
+Step 9/14 : RUN mkdir -m 777 -p /config/resources
+
+ ---> Using cache
+ ---> a29b39c8363e
+
+Step 10/14 : ENV JAVA_HOME=/root/java     PATH=/root/java/jre/bin:/opt/mvn/apache-maven/bin:$PATH
+
+ ---> Using cache
+
+ ---> 2f4e834d59ac
+Step 11/14 : RUN echo unset LOG_DIR >> /root/.bashrc && 	echo unset WLP_OUTPUT_DIR >> /root/.bashrc
+
+ ---> Using cache
+
+ ---> 8f02434c5504
+
+Step 12/14 : COPY /artifacts /root/artifacts/
+
+ ---> 12550ce99549
+Step 13/14 : RUN chmod -R +rx /root/artifacts/
+
+ ---> Running in 4a3f291cebc5
+
+Removing intermediate container 4a3f291cebc5
+
+ ---> 68a3d0998ba7
+Step 14/14 : CMD ["/root/artifacts/new_entrypoint.sh"]
+
+ ---> Running in ce15e5ca63ae
+
+Removing intermediate container ce15e5ca63ae
+
+ ---> 96878e3023ac
+
+Successfully built 96878e3023ac
+
+Successfully tagged mc-myjavasample-bb55543d4aea7cdfdf5d56b4d17eff8336eb9:latest
+
+[INFO Fri Nov 23 16:38:21 GMT 2018] Container built
+
+[INFO Fri Nov 23 16:38:21 GMT 2018] * Starting container. 
+
+[INFO Fri Nov 23 16:38:21 GMT 2018] Run command to start the container: /idc/artifacts/run_kubernetes.sh mc-myjavasample-bb55543d4aea7cdfdf5d56b4d17eff8336eb9 mc-myjavasample-bb55543d4aea7cdfdf5d56b4d17eff8336eb9 /microclimate-workspace/.idc/docker/docker-bb55543d4aea7cdfdf5d56b4d17eff8336eb951b /microclimate-workspace
+
+Error: EOF
+
+The push refers to repository [mycluster.icp:8500/default/mc-myjavasample-bb55543d4aea7cdfdf5d56b4d17eff8336eb9]
+
+Get https://mycluster.icp:8500/v2/: dial tcp: lookup mycluster.icp on 10.0.0.254:53: no such host
+
+Error: release mc-myjavasample-bb55543d4aea7cdfdf5d56b4d17eff8336eb9 failed: Internal error occurred: admission webhook "trust.hooks.securityenforcement.admission.cloud.ibm.com" denied the request: 
+
+Deny "mycluster.icp:8500/default/mc-myjavasample-bb55543d4aea7cdfdf5d56b4d17eff8336eb9:latest", no matching repositories in ClusterImagePolicy and no ImagePolicies in the "default" namespace
+
+Failed to install Helm chart for release mc-myjavasample-bb55543d4aea7cdfdf5d56b4d17eff8336eb9, exiting
+
+[INFO Fri Nov 23 16:38:23 GMT 2018] Log file name for build: microclimate-dev-liberty-myjavasample
+
+
+Error from server (NotFound): pods "Deny" not found
+
+idc build finished for /microclimate-workspace/myjavasample Fri Nov 23 16:38:24 UTC 2018
+
+idc start for /microclimate-workspace/myjavasample Fri Nov 23 16:38:24 UTC 2018
+
+[INFO Fri Nov 23 16:38:25 GMT 2018] Configuration file detected: 
+
+
+[INFO Fri Nov 23 16:38:25 GMT 2018] libertyEnv : microclimate
+
+[INFO Fri Nov 23 16:38:25 GMT 2018] appPrefix : microclimate-dev-liberty-
+[INFO Fri Nov 23 16:38:25 GMT 2018] idcBasePath : /microclimate-workspace
+
+[INFO Fri Nov 23 16:38:27 GMT 2018] Selected Dockerfile from Dockerfile list [Dockerfile, Dockerfile-lang, Dockerfile-dev] is: Dockerfile-lang
+[INFO Fri Nov 23 16:38:27 GMT 2018] Selected Dockerfile from Dockerfile list [Dockerfile-dev-build, Dockerfile-build] is: Dockerfile-build
+
+[INFO Fri Nov 23 16:38:29 GMT 2018] ----
+
+[INFO Fri Nov 23 16:38:29 GMT 2018] Container Image already present: mc-myjavasample-bb55543d4aea7cdfdf5d56b4d17eff8336eb9
+
+
+[INFO Fri Nov 23 16:38:29 GMT 2018] Skipping image build. 
+[INFO Fri Nov 23 16:38:29 GMT 2018] ----
+
+[INFO Fri Nov 23 16:38:31 GMT 2018] * Starting container. 
+
+
+[INFO Fri Nov 23 16:38:31 GMT 2018] Run command to start the container: /idc/artifacts/run_kubernetes.sh mc-myjavasample-bb55543d4aea7cdfdf5d56b4d17eff8336eb9 mc-myjavasample-bb55543d4aea7cdfdf5d56b4d17eff8336eb9 /microclimate-workspace/.idc/docker/docker-bb55543d4aea7cdfdf5d56b4d17eff8336eb951b /microclimate-workspace
+
+Deleting old helm release 
+
+release "mc-myjavasample-bb55543d4aea7cdfdf5d56b4d17eff8336eb9" deleted
+
+The push refers to repository [mycluster.icp:8500/default/mc-myjavasample-bb55543d4aea7cdfdf5d56b4d17eff8336eb9]
+
+Get https://mycluster.icp:8500/v2/: dial tcp: lookup mycluster.icp on 10.0.0.254:53: no such host
+
+Error: release mc-myjavasample-bb55543d4aea7cdfdf5d56b4d17eff8336eb9 failed: Internal error occurred: admission webhook "trust.hooks.securityenforcement.admission.cloud.ibm.com" denied the request: 
+Deny "mycluster.icp:8500/default/mc-myjavasample-bb55543d4aea7cdfdf5d56b4d17eff8336eb9:latest", no matching repositories in ClusterImagePolicy and no ImagePolicies in the "default" namespace
+
+Failed to install Helm chart for release mc-myjavasample-bb55543d4aea7cdfdf5d56b4d17eff8336eb9, exiting
+
+Error from server (NotFound): pods "Deny" not found
+
+idc start completed for /microclimate-workspace/myjavasample Fri Nov 23 16:38:37 UTC 2018
+
+/server
+
+The container was started successfully for application /microclimate-workspace/myjavasample
+The project location for myjavasample is /microclimate-workspace/myjavasample
+Looking up service information for service: mc-myjavasample-bb55543d4aea7cdfdf5d56b4d17eff8336eb9-idc
+Using release name to select service
+No resources found.
+Internal port: 9080
+Exposed port: 30018
+IP address info: 10.0.0.1
+Found container information: {"podName":"","internalPort":"9080","exposedPort":"30018","ip":"10.0.0.1"}
+TypeError: Data must be a string or a buffer
+    at Hash.update (crypto.js:99:16)
+    at getContainerName (/server/projects/projectUtil.js:313:50)
+    at findBuildLogPath (/server/projects/projectUtil.js:235:25)
+    at getProjectLogs (/server/projects/projectUtil.js:181:26)
+    at utils.spawnDetached (/server/projects/projectUtil.js:112:38)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+Emitting event over socket 
+ message: projectCreation
+ data: {
+  "operationId": "2a08487c5efbd1d94a9fd19078f71e81",
+  "projectId": "myjavasample",
+  "status": "success",
+  "host": "10.0.0.1",
+  "ports": {
+    "exposedPort": "30018",
+    "internalPort": "9080"
+  },
+  "podName": "",
+  "error": {}
+}
+Emitted event: projectCreation
+{"operationId":"2a08487c5efbd1d94a9fd19078f71e81","projectId":"myjavasample","status":"success","host":"10.0.0.1","ports":{"exposedPort":"30018","internalPort":"9080"},"podName":"","error":{}}
+File changed: Example.java
+{"location": "/microclimate-workspace/myjavasample"}
+
+  % Total    % Recei
+ved % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0    
+ 0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+Looking up project files in /fwdata/projects/
+myjavasample.json
+100    54  100     2  100    52     21    553 --:--:-- --:--:-- --:--:--   574
+
+OKNotification timestamps 1542992435 and 1542992435 match for file Example.java, skipping build.
+
+{ projectId: 'myjavasample',
+  projectType: 'liberty',
+  location: '/microclimate-workspace/myjavasample' }
+Found the projectId: myjavasample
+Updating container for liberty project /microclimate-workspace/myjavasample
+The container name for myjavasample is mc-myjavasample-bb55543d4aea7cdfdf5d56b4d17eff8336eb9
+Container name: mc-myjavasample-bb55543d4aea7cdfdf5d56b4d17eff8336eb9
+In K8 environment: true
+Now tracking running process 674 for project myjavasample
+*** JAVA
+*** PWD = /server
+
+*** ROOT = /microclimate-workspace/myjavasample
+*** LOCAL_WORKSPACE = /microclimate-workspace
+*** CONTAINER_NAME = mc-myjavasample-bb55543d4aea7cdfdf5d56b4d17eff8336eb9
+*** HOST_OS = 
+
+File changes detected for app /microclimate-workspace/myjavasample. Initiating update.
+
+idc build started for /microclimate-workspace/myjavasample Fri Nov 23 17:00:35 UTC 2018
+
+[INFO Fri Nov 23 17:00:36 GMT 2018] Configuration file detected: 
+
+[INFO Fri Nov 23 17:00:36 GMT 2018] libertyEnv : microclimate
+
+[INFO Fri Nov 23 17:00:36 GMT 2018] appPrefix : microclimate-dev-liberty-
+[INFO Fri Nov 23 17:00:36 GMT 2018] idcBasePath : /microclimate-workspace
+
+[INFO Fri Nov 23 17:00:39 GMT 2018] Selected Dockerfile from Dockerfile list [Dockerfile, Dockerfile-lang, Dockerfile-dev] is: Dockerfile-lang
+
+[INFO Fri Nov 23 17:00:39 GMT 2018] Selected Dockerfile from Dockerfile list [Dockerfile-dev-build, Dockerfile-build] is: Dockerfile-build
+
+[INFO Fri Nov 23 17:00:41 GMT 2018] ----
+[INFO Fri Nov 23 17:00:41 GMT 2018] Container Image already present: mc-myjavasample-bb55543d4aea7cdfdf5d56b4d17eff8336eb9
+[INFO Fri Nov 23 17:00:41 GMT 2018] Skipping image build. 
+[INFO Fri Nov 23 17:00:41 GMT 2018] ----
+
+[INFO Fri Nov 23 17:00:42 GMT 2018] * Starting container. 
+
+[INFO Fri Nov 23 17:00:42 GMT 2018] Run command to start the container: /idc/artifacts/run_kubernetes.sh mc-myjavasample-bb55543d4aea7cdfdf5d56b4d17eff8336eb9 mc-myjavasample-bb55543d4aea7cdfdf5d56b4d17eff8336eb9 /microclimate-workspace/.idc/docker/docker-bb55543d4aea7cdfdf5d56b4d17eff8336eb951b /microclimate-workspace
+
+
+Deleting old helm release 
+
+release "mc-myjavasample-bb55543d4aea7cdfdf5d56b4d17eff8336eb9" deleted
+
+The push refers to repository [mycluster.icp:8500/default/mc-myjavasample-bb55543d4aea7cdfdf5d56b4d17eff8336eb9]
+
+Get https://mycluster.icp:8500/v2/: dial tcp: lookup mycluster.icp on 10.0.0.254:53: no such host
+
+Error: release mc-myjavasample-bb55543d4aea7cdfdf5d56b4d17eff8336eb9 failed: Internal error occurred: admission webhook "trust.hooks.securityenforcement.admission.cloud.ibm.com" denied the request: 
+Deny "mycluster.icp:8500/default/mc-myjavasample-bb55543d4aea7cdfdf5d56b4d17eff8336eb9:latest", no matching repositories in ClusterImagePolicy and no ImagePolicies in the "default" namespace
+
+Failed to install Helm chart for release mc-myjavasample-bb55543d4aea7cdfdf5d56b4d17eff8336eb9, exiting
+
+[INFO Fri Nov 23 17:00:48 GMT 2018] Log file name for build: microclimate-dev-liberty-myjavasample
+
+Error from server (NotFound): pods "Deny" not found
+
+idc build finished for /microclimate-workspace/myjavasample Fri Nov 23 17:00:49 UTC 2018
+/server
+
+The container was started successfully for application /microclimate-workspace/myjavasample
+The project location for myjavasample is /microclimate-workspace/myjavasample
+Looking up service information for service: mc-myjavasample-bb55543d4aea7cdfdf5d56b4d17eff8336eb9-idc
+Using release name to select service
+No resources found.
+Internal port: 9080
+Exposed port: 31488
+IP address info: 10.0.0.1
+Found container information: {"podName":"","internalPort":"9080","exposedPort":"31488","ip":"10.0.0.1"}
+TypeError: Data must be a string or a buffer
+    at Hash.update (crypto.js:99:16)
+    at getContainerName (/server/projects/projectUtil.js:313:50)
+    at findBuildLogPath (/server/projects/projectUtil.js:235:25)
+    at getProjectLogs (/server/projects/projectUtil.js:181:26)
+    at utils.spawnDetached (/server/projects/projectUtil.js:112:38)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+Emitting event over socket 
+ message: projectChanged
+ data: {
+  "operationId": "0df27fe347211dbee0e2471c9c40d627",
+  "projectId": "myjavasample",
+  "status": "success",
+  "host": "10.0.0.1",
+  "ports": {
+    "exposedPort": "31488",
+    "internalPort": "9080"
+  },
+  "podName": "",
+  "error": {}
+}
+Emitted event: projectChanged
+{"operationId":"0df27fe347211dbee0e2471c9c40d627","projectId":"myjavasample","status":"success","host":"10.0.0.1","ports":{"exposedPort":"31488","internalPort":"9080"},"podName":"","error":{}}
